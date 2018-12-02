@@ -1,8 +1,8 @@
-# Spring-Boot Camel QuickStart
+# Spring-Boot Camel with Embedded ActiveMQ
 
 This example demonstrates how you can use Apache Camel with Spring Boot in Java DSL with embedded ActiveMQ.
 
-This example uses Spring Boot to configure a little application that includes a Camel route that read files and send over to activemq and again consuming from ActiveMQ and writing to Fil based on conditions.
+This example uses Spring Boot to configure a little application that includes a Camel route that read files and send over to activemq and again consuming from ActiveMQ and writing to File based on conditions.
 
 ### Building
 
