@@ -20,7 +20,7 @@ public class SlackLogRoute extends RouteBuilder {
 		.process(msgProcessor)
 		//.setBody().simple("${body}")
 		.log(LoggingLevel.INFO, "Messaging sending to Slack-> ${body}")
-		.to("slack:@slackbot?iconEmoji=:camel:&username=kodtodya&webhookUrl=https://hooks.slack.com/services/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").id("slackProducer")
+		.to("slack:@slackbot?iconEmoji=:camel:&username=kodtodya&webhookUrl=https://hooks.slack.com/services/TEZDVMR0Q/BF0CU9UQ5/XXXXXXXXXXXXX").id("slackProducer")
 		.log(LoggingLevel.INFO, "Test Post posted to slack-${body}");
 		
 	}
