@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: commons-httpclient:commons-httpclient:3.1.0.redhat-8">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1.0.redhat-8/commons-httpclient-3.1.0.redhat-8.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1.0.redhat-8/commons-httpclient-3.1.0.redhat-8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1.0.redhat-8/commons-httpclient-3.1.0.redhat-8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
