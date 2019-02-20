@@ -1,0 +1,5 @@
+com\kodtodya\practice\Application.class
+com\kodtodya\practice\broker\JMSBroker.class
+com\kodtodya\practice\routes\JMSToFileRoute.class
+com\kodtodya\practice\routes\TimerToJMSRoute.class
+com\kodtodya\practice\broker\config\JMSConfig.class
