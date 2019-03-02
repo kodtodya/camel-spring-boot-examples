@@ -1,0 +1,9 @@
+--------------------------------------------------------------------------
+Dear All,
+
+This is my sample text file which contains test data. 
+We are going to use this file in recipient-list example to read from it.
+You can try your own files and give a try. Camel is really fun to work on.
+
+Cheers..!!!
+--------------------------------------------------------------------------
