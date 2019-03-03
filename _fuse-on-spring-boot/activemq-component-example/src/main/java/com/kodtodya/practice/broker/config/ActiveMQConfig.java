@@ -36,6 +36,6 @@ public class ActiveMQConfig {
 	public JmsTemplate jmsTemplate(){
 	    JmsTemplate jmsTemplate = new JmsTemplate();
 		jmsTemplate.setConnectionFactory(this.connectionFactory());
-	    return jmsTemplate;
+		return jmsTemplate;
 	}
 }
