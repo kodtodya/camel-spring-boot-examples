@@ -16,7 +16,7 @@
     <version.jboss.arquillian>1.1.10.Final</version.jboss.arquillian>
     <jboss.home>${env.JBOSS_HOME}</jboss.home>
     <version.maven.surefire.plugin>2.20.1</version.maven.surefire.plugin>
-    <version.apache.camel>2.21.0</version.apache.camel>
+    <version.apache.camel>2.24.0</version.apache.camel>
     <server.config>standalone-camel.xml</server.config>
     <maven.compiler.target>1.8</maven.compiler.target>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
