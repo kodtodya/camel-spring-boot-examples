@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd        http://camel.apache.org/schema/spring http://camel.apache.org/schema/spring/camel-spring.xsd">
+	<camelContext id="hello-world-example-context"
+		xmlns="http://camel.apache.org/schema/spring">
+		<route id="timer-to-direct-route">
+			<from id="timerEndpoint"
+				uri="timer:myTimer?period=2000&amp;repeatCount=5000" />
+			<setBody>
+				<simple>Continuously hello training participants by first Fuse project...</simple>
+			</setBody>
+			<to id="directEndpoint" uri="direct:foo" />
+		</route>
+		<route id="direct-to-log-route">
+			<from id="directConsumer"
+				uri="direct:foo" />
+				<log message="msg is >> ${body}"></log>
+		</route>
+	</camelContext>
+</beans>
