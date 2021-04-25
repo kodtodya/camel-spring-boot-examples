@@ -21,12 +21,13 @@ Now deploy your application:
 Please follow below sequence for the examples to have smooth understanding:
 
 ## Part-1:
-- timer-log-example
 - quartz2-component-example
-- rest-camel-example
-- http-camel-example
+- timer-component-example
 - file-component-example
-- ehcache-camel-example
+- seda-component-example
+- rest-component-example
+- ehcache-component-example
+- http-camel-example
 - splitter-aggregator-example
 - splitter-aggregator-file-example
 - jms-config-shread-data-config

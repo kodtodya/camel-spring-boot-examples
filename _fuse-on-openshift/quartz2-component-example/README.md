@@ -10,16 +10,10 @@ The example can be built with
 
     mvn clean package
 
-## Build Docker/S2I image
-
-
-    mvn oc:resource oc:build
-
-
 ## Deploy to openshift-4.x
 
 
-    mvn oc:deploy
+    mvn oc:resource oc:deploy
 
 
 ## Check Hawtio
