@@ -27,9 +27,9 @@ Please follow below sequence for the examples to have smooth understanding:
 - seda-component-example
 - rest-component-example
 - ehcache-component-example
-- http-camel-example
 - splitter-aggregator-example
-- splitter-aggregator-file-example
+- splitter-aggregator-file-example**
+- http-camel-example
 - jms-config-shread-data-config
 
 ## Part-2:
