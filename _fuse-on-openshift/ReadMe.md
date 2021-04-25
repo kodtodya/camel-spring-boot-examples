@@ -16,5 +16,29 @@ Let's build application image:
 
 Now deploy your application:
 
-	mvn oc:deploy
-	
+	mvn oc:resource oc:deploy
+
+Please follow below sequence for the examples to have smooth understanding:
+
+## Part-1:
+- timer-log-example
+- quartz2-component-example
+- rest-camel-example
+- http-camel-example
+- file-component-example
+- ehcache-camel-example
+- splitter-aggregator-example
+- splitter-aggregator-file-example
+- jms-config-shread-data-config
+
+## Part-2:
+- rest-jms-file-example
+- camel-sql-example
+- kafka-camel-example
+- reactive-streams-example
+- encryption-decryption-example
+- Performance tuning for camel & amq/messaging
+- Clustering with cellar
+- camel-transformation-example
+- camel-rest-junit-example
+- camel-file-junit-example
