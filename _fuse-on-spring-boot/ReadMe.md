@@ -10,5 +10,6 @@ This folder contains all the examples(Standalone Spring Boot) which can be start
 
 ## Practical Part - Sequence:
 
-- timer-services-example
-- quartz2-component-example
+1. timer-services-example
+2. quartz2-component-example
+3. file2-component-example
