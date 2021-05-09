@@ -17,8 +17,8 @@ All the resource utilization can be monitored using Hawtio
     http://localhost:8081/hawtio
 
 
-###Check Hawtio
+### Test rest service
 
-Connect to H2 database and check your records
+Invoke rest service using below URL. Feel free to update the input number.
 
-    http://localhost:8080/h2-console
+    http://localhost:8080/checkprime/11

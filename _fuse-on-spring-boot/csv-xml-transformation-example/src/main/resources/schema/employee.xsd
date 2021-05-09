@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+    <!-- XML Schema Generated from XML Document on Sun May 09 2021 15:03:27 GMT+0530 (India Standard Time) -->
+    <xs:element name="Employees">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Employee" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="EmployeeID" type="xs:int"></xs:element>
+                            <xs:element name="Name" type="xs:string"></xs:element>
+                            <xs:element name="Salary" type="xs:int"></xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

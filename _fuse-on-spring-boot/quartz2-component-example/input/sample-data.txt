@@ -1,0 +1,15 @@
+this
+file
+contains
+sample
+data
+to
+simply
+have
+a
+file
+test
+consumer
+through
+camel-stream
+.

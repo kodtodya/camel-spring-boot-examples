@@ -8,7 +8,11 @@ public class SplitterRoute extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        from("file:{{input.location}}?noop=true").split().tokenize("\n").to("log:myLogger");
+        from("file:{{input.location}}?noop=true").id("file-consumer-component")
+                .routeId("file-to-logger-route")
+                // split the file content & tokenize using new-line('\n')
+                .split().tokenize("\n").id("splitter-process")
+                .to("log:myLogger").id("log-component");
     }
 
 }

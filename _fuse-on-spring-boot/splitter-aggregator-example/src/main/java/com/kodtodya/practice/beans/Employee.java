@@ -1,5 +1,6 @@
 package com.kodtodya.practice.beans;
 
+// Employee POJO class
 public class Employee {
 
     public Employee(String empId, String name, String type) {

@@ -12,12 +12,13 @@ import java.util.List;
 @Component
 public class EmployeeProcessor implements Processor {
 
+    // generate the list of employees and sets it to Dept object
     @Override
     public void process(Exchange exchange) throws Exception {
         List<Employee> employees = new ArrayList<>();
         employees.add(new Employee("1", "Avadhut", "Finance"));
-        employees.add(new Employee("2", "emp2", "IT"));
-        employees.add(new Employee("2", "emp3", "IT"));
+        employees.add(new Employee("2", "Kodtodya", "IT"));
+        employees.add(new Employee("3", "Avi", "IT"));
 
         Department dept = new Department();
         dept.setEmployees(employees);

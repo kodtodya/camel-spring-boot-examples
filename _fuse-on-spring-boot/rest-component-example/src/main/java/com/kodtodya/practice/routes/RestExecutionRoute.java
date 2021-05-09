@@ -16,14 +16,28 @@ public class RestExecutionRoute extends RouteBuilder {
 	public void configure() throws Exception {
 
 		onException(CamelExecutionException.class)
+				.handled(true)
+				.redeliveryDelay(2000)
+				.maximumRedeliveries(5)
+				// asynchronous redelivery
+				.asyncDelayedRedelivery()
+				// log the exeption details
 				.to("log:exceptionLogger");
-		// call the embedded rest service from the PetController
-		restConfiguration().component("servlet").port(8080).bindingMode(RestBindingMode.auto);
 
-		rest().get("/checkprime/{number}").produces("application/json")
+		// call the embedded rest service from the RestController
+		restConfiguration()
+				.component("servlet")
+				.port(8080)
+				.bindingMode(RestBindingMode.auto);
+
+		// actual rest service implementtion
+		rest().get("/checkprime/{number}")
+				.produces("application/json")
 				.to("direct:prime");
 
+		// consume the call received in rest for processing
 		from("direct:prime")
+				.log("inside the camel-route, we have received ${header.number} to check if it is prime or not")
 				.setBody().simple("${header.number}")
 				.bean(service);
 	}

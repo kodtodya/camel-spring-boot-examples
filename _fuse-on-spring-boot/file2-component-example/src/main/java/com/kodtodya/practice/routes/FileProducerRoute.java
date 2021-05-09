@@ -9,8 +9,10 @@ public class FileProducerRoute extends RouteBuilder{
 	@Override
 	public void configure() throws Exception {
 		from("direct:myDirectComponent").id("directConsumer")
-		.log("\n\nHi, Your file content in file producer is>>\n\n ${body}")
-		.to("file:{{output.location}}?fileName=camel-session-out.txt&fileExist=Append").id("fileProducer");		
+				// log statement
+				.log("\n\nHi, Your file content in file producer is>>\n\n ${body}")
+				// in case of fileExisti=Append, pls refer to bug: https://issues.apache.org/jira/browse/CAMEL-14127
+				.to("file:{{output.location}}?fileName=camel-session-out.txt&fileExist=Append&charset=utf-8").id("fileProducer");
 	}
 
 }

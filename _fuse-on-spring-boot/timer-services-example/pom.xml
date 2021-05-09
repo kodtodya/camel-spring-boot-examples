@@ -13,9 +13,8 @@
 	<description>timer-services-example</description>
 
 	<properties>
-		<fuse.version>7.5.0.fuse-750029-redhat-00002</fuse.version>
-		<camel.core.version>2.21.0.fuse-750033-redhat-00001</camel.core.version>
-		<maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
+		<fuse.version>7.8.0.fuse-sb2-780038-redhat-00001</fuse.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
 	</properties>
@@ -37,12 +36,6 @@
 			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-spring-boot-starter</artifactId>
 		</dependency>
-		<dependency>
-			<groupId>org.apache.camel.springboot</groupId>
-			<artifactId>camel-directvm-starter</artifactId>
-			<!-- <version>${camel.core.version}</version> -->
-			<version>3.0.0</version>
-		</dependency>
 	</dependencies>
 
 	<build>
@@ -52,7 +45,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.7.0</version>
+				<version>${maven-compiler-plugin.version}</version>
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>

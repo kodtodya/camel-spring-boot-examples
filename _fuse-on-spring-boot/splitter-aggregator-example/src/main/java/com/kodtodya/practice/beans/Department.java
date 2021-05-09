@@ -4,7 +4,6 @@ import java.util.List;
 
 public class Department {
     
-    
     private List<Employee> employees;
     
     private double totalSalary;

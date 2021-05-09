@@ -8,8 +8,8 @@ public class SedaToLogRoute extends RouteBuilder{
 
 	@Override
 	public void configure() throws Exception {
-		from("seda:testSedaEndpoint?concurrentConsumers=5").id("sedaConsumer").routeId("Seda-Log-Route")
-				.to("log:sedaLogger").id("sedalogger");
+		from("seda:testSedaEndpoint?concurrentConsumers=5").id("seda-consumer").routeId("seda-log-route")
+				.to("log:sedaLogger").id("seda-logger");
 	}
 
 }

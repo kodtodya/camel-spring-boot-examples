@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+         xmlns="http://maven.apache.org/POM/4.0.0">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.kodtodya.practice</groupId>
     <artifactId>content-based-routing-example</artifactId>
@@ -10,14 +10,11 @@
     <description>content-based-routing-example</description>
 
     <properties>
+        <fuse.version>7.8.0.fuse-sb2-780038-redhat-00001</fuse.version>
+        <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <fuse.version>7.2.0.fuse-720020-redhat-00001</fuse.version>
-        <spring-boot.version>1.5.16.RELEASE</spring-boot.version>
-        <maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
-        <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <activemq.version>5.15.8</activemq.version>
     </properties>
 
     <dependencyManagement>
@@ -63,9 +60,8 @@
                 </configuration>
             </plugin>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
+                <groupId>org.jboss.redhat-fuse</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring-boot.version}</version>
                 <executions>
                     <execution>
                         <goals>
@@ -73,6 +69,7 @@
                         </goals>
                     </execution>
                 </executions>
+                <version>${fuse.version}</version>
             </plugin>
         </plugins>
     </build>
