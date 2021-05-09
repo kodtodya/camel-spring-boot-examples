@@ -12,15 +12,11 @@
 	<url>http://maven.apache.org</url>
 
 	<properties>
+		<fuse.version>7.8.0.fuse-sb2-780038-redhat-00001</fuse.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<fuse.version>7.2.0.fuse-720020-redhat-00001</fuse.version>
-		<spring-boot.version>1.5.16.RELEASE</spring-boot.version>
-		<maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
-		<maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<activemq.version>5.15.8</activemq.version>
-		<ajava.version>1.8</ajava.version>
 	</properties>
 
 	<dependencyManagement>
@@ -51,7 +47,6 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
-
 		</dependency>
 		<dependency>
 			<groupId>com.h2database</groupId>
@@ -67,12 +62,6 @@
 		<dependency>
 			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-sql-starter</artifactId>
-
-		</dependency>
-		<dependency>
-			<groupId>org.apache.camel</groupId>
-			<artifactId>camel-jdbc</artifactId>
-
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -87,6 +76,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jta-narayana</artifactId>
+			<version>1.5.16.RELEASE</version>
 		</dependency>
 		<dependency>
 			<groupId>me.snowdrop</groupId>
@@ -109,15 +99,14 @@
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>${maven-compiler-plugin.version}</version>
-			<!-- 	<configuration>
+			 	<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-				</configuration> -->
+				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.springframework.boot</groupId>
+				<groupId>org.jboss.redhat-fuse</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<version>${spring-boot.version}</version>
 				<executions>
 					<execution>
 						<goals>
@@ -125,6 +114,7 @@
 						</goals>
 					</execution>
 				</executions>
+				<version>${fuse.version}</version>
 			</plugin>
 		</plugins>
 	</build>

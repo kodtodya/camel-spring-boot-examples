@@ -13,9 +13,17 @@ public class TimerToJdbcRoute extends RouteBuilder{
 
 	@Override
 	public void configure() throws Exception {
+
+		// event generator
 		from("timer://jdbcTimer?period=1000&repeatCount=25").id("timerEndpoint")
-				.process(sqlProcessor).id("sqlProcessor")
-				.to("jdbc:dataSource").id("jdbcEndpoint")
+
+				// insert record by randomly generating sample data
+				.process(sqlProcessor).id("sql-processor")
+
+				// send to database
+				.to("jdbc:dataSource").id("jdbc-endpoint")
+
+				// log statement
 				.log("record inserted...");
 	}
 

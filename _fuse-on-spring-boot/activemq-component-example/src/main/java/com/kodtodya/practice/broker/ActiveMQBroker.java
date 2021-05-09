@@ -13,6 +13,9 @@ public class ActiveMQBroker {
 	
 	@Value("${spring.activemq.broker-url}")
 	private String userPath;
+
+    @Value("${spring.activemq.broker-name}")
+    private String brokerName;
 	
 	@Bean
 	public BrokerService configureBroker() throws Exception
@@ -21,7 +24,7 @@ public class ActiveMQBroker {
 	TransportConnector connector = new TransportConnector();
     connector.setUri(new URI(userPath));
     broker.addConnector(connector);
-    broker.setBrokerName("myBroker");
+    broker.setBrokerName(brokerName);
     broker.setPersistent(false);
     broker.setUseJmx(false);
     broker.start();

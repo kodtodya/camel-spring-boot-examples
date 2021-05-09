@@ -8,9 +8,9 @@ public class JMSToFileRoute extends RouteBuilder{
 
 	@Override
 	public void configure() throws Exception {
-		from("jms:queue:myQ").id("jmsConsumer").routeId("JMS-to-File-Route")
+		from("jms:queue:myQ").id("jms-consumer").routeId("jms-to-file-route")
 				.log("JMS consumer triggered..").id("consumer-log")
-				.to("file:C:/_test/_fuse").id("fileProducer");
+				.to("file:{{output.location}}").id("file-producer");
 	}
 
 }

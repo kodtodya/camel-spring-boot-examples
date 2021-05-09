@@ -15,4 +15,5 @@ public class ApplicationBeans {
 		propagationRequired.setPropagationBehaviorName("PROPAGATION_REQUIRES_NEW");
 		return propagationRequired;
 	}
+
 }

@@ -13,10 +13,11 @@
 	<description>camel-spring-boot-xa-example</description>
 
 	<properties>
-		<fuse.version>7.5.0.fuse-750029-redhat-00002</fuse.version>
-		<maven-compiler-plugin.version>3.6.0</maven-compiler-plugin.version>
+		<fuse.version>7.8.0.fuse-sb2-780038-redhat-00001</fuse.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
 
 	<dependencyManagement>
@@ -35,7 +36,6 @@
 		<dependency>
 			<groupId>org.apache.camel</groupId>
 			<artifactId>camel-spring-boot-starter</artifactId>
-			<!-- <version>2.21.0.fuse-750033-redhat-00001</version> -->
 		</dependency>
 		<dependency>
 			<groupId>org.apache.camel</groupId>
@@ -45,22 +45,15 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<!-- <exclusions> <exclusion> <groupId>org.springframework.boot</groupId> 
-				<artifactId>spring-boot-starter-tomcat</artifactId> </exclusion> </exclusions> -->
 		</dependency>
-		<!-- <dependency> <groupId>org.springframework.boot</groupId> <artifactId>spring-boot-starter-undertow</artifactId> 
-			</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
 		</dependency>
-
-
 	</dependencies>
 
 	<build>
 		<defaultGoal>spring-boot:run</defaultGoal>
-
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

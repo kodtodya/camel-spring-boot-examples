@@ -24,4 +24,17 @@ This folder contains all the examples(Standalone Spring Boot) which can be start
 12. content-based-routing-example (file & direct components and content-based-routing & transform EIPs)
 13. recipient-list-example (file & direct components and recipientList EIP)
 14. csv-xml-transformation-example (file, log & direct and bindy, jaxb, marshalling, unmarshalling & splitting EIP)
-15. 
+15. activemq-component-example (file & activemq components and embedded broker, multicast, thread-pool, parallel-processing and throttler EIPs)
+16. external-activemq-component-example (rest, file & direct components and external broker, multicast, thread-pool, parallel-processing and throttler EIPs)
+17. jms-component-example (file & jms components and embedded broker, multicast, thread-pool, parallel-processing and throttler EIPs)
+18. jdbc-component-example (timer & jdbc component and processor, embedded database)
+19. sql-component-example (timer, sql, file & jdbc component and processor & embedded database)
+20. camel-boot-rest-sql-narayana-example (direct, rest & sql component and processor & embedded database)
+21. kafka-component-example (netty-http, rest, kafka, file producer, throttler, exception handling, concurrentConsumers and toD)
+
+Not covered here:
+
+- camel-spring-boot-xa-example
+- camel-spring-boot-kafka-producer
+- mongo-logging-example
+- telegram-slack

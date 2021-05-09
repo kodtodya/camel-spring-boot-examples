@@ -14,13 +14,16 @@ public class JMSBroker {
     @Value("${spring.jms.broker-url}")
     private String brokerURL;
 
+    @Value("${spring.jms.broker-name}")
+    private String brokerName;
+
     @Bean
     public BrokerService configureBroker() throws Exception {
         BrokerService broker = new BrokerService();
         TransportConnector connector = new TransportConnector();
         connector.setUri(new URI(brokerURL));
         broker.addConnector(connector);
-        broker.setBrokerName("myBroker");
+        broker.setBrokerName(brokerName);
         broker.setPersistent(false);
         broker.setUseJmx(false);
         broker.start();

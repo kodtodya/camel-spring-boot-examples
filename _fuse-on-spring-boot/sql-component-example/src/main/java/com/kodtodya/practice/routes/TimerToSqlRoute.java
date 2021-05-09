@@ -7,8 +7,28 @@ import org.springframework.stereotype.Component;
 public class TimerToSqlRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
-        from("timer:sqlTimer?period=5000&repeatCount=5")
-                .to("sql:SELECT * FROM ORGANIZATIONS ORDER BY ID?dataSource=#dataSource")
-                .log("\n---------------------------\n ${body} \n---------------------------\n");
+
+        // timer - event generator
+        from("timer:sqlTimer?period=60000&repeatCount=1&delay=15000")
+
+                .log("---------------------------")
+
+                // fetch records from database
+                .to("sql:{{select.query}}?dataSource=#dataSource")
+
+                // split every record
+                .split(body())
+
+                // convert body to string
+                .convertBodyTo(String.class)
+
+                // logger statement
+                .log("${body}")
+
+                // save the records to file
+                .to("file:{{output.location}}")
+
+                .log("---------------------------");
+
     }
 }

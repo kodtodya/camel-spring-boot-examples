@@ -17,13 +17,17 @@ public class RestExecutionRoute extends RouteBuilder {
 		// call the embedded rest service from the PetController
 		restConfiguration().component("servlet").port(8080).bindingMode(RestBindingMode.auto);
 
-		rest().post("/sessions/{course}")
-			.produces("application/json")
-			.to("direct:insertEndpoint")
-						
-			.get("/getsessions")
-			.produces("application/json")
-			.to("direct:fetchEndpoint")
+
+		rest()
+				// post service for inserting data
+				.post("/sessions/{course}")
+				.produces("application/json")
+				.to("direct:insertEndpoint")
+
+				// get service for fetching data from database
+				.get("/getsessions")
+				.produces("application/json")
+				.to("direct:fetchEndpoint")
 			;
 	}
 }

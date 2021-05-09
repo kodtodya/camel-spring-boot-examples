@@ -1,65 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3743e308-3545-4d35-b648-e21decf09068" name="Default Changelist" comment="" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="3743e308-3545-4d35-b648-e21decf09068" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/../ReadMe.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activemq-component-example/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../activemq-component-example/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activemq-component-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../activemq-component-example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activemq-component-example/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../activemq-component-example/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activemq-component-example/src/main/java/com/kodtodya/practice/broker/ActiveMQBroker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activemq-component-example/src/main/java/com/kodtodya/practice/broker/ActiveMQBroker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activemq-component-example/src/main/java/com/kodtodya/practice/broker/config/ActiveMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activemq-component-example/src/main/java/com/kodtodya/practice/broker/config/ActiveMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activemq-component-example/src/main/java/com/kodtodya/practice/routes/ActiveMQToFileRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activemq-component-example/src/main/java/com/kodtodya/practice/routes/ActiveMQToFileRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activemq-component-example/src/main/java/com/kodtodya/practice/routes/TimerToActiveMQRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/../activemq-component-example/src/main/java/com/kodtodya/practice/routes/TimerToActiveMQRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../activemq-component-example/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../activemq-component-example/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/.settings/fusetooling/amq-fuse-demo-maven.launch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/.settings/org.eclipse.wst.validation.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/.settings/org.hibernate.eclipse.console.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/configuration/settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/input/Message1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/input/Message2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/input/Message3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/src/main/fabric8/deployment.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/src/main/java/org/mycompany/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/src/main/java/org/mycompany/routes/AMQToFileRoute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/src/main/java/org/mycompany/routes/FileToAMQRoute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../amq-fuse-demo/src/main/resources/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc-component-example/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc-component-example/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc-component-example/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc-component-example/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc-component-example/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc-component-example/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc-component-example/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc-component-example/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc-component-example/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc-component-example/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc-component-example/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc-component-example/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc-component-example/src/main/java/com/kodtodya/practice/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc-component-example/src/main/java/com/kodtodya/practice/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc-component-example/src/main/java/com/kodtodya/practice/processor/SQLProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc-component-example/src/main/java/com/kodtodya/practice/processor/SQLProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc-component-example/src/main/java/com/kodtodya/practice/routes/TimerToJdbcRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc-component-example/src/main/java/com/kodtodya/practice/routes/TimerToJdbcRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jdbc-component-example/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../jdbc-component-example/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jms-component-example/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../jms-component-example/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jms-component-example/src/main/java/com/kodtodya/practice/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jms-component-example/src/main/java/com/kodtodya/practice/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jms-component-example/src/main/java/com/kodtodya/practice/broker/JMSBroker.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jms-component-example/src/main/java/com/kodtodya/practice/broker/JMSBroker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jms-component-example/src/main/java/com/kodtodya/practice/routes/JMSToFileRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jms-component-example/src/main/java/com/kodtodya/practice/routes/JMSToFileRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jms-component-example/src/main/java/com/kodtodya/practice/routes/TimerToJMSRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/../jms-component-example/src/main/java/com/kodtodya/practice/routes/TimerToJMSRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jms-component-example/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../jms-component-example/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jms-component-example/target/activemq-component-example-1.0.0-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jms-component-example/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../jms-component-example/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jms-component-example/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../jms-component-example/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jms-component-example/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../jms-component-example/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jms-component-example/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../jms-component-example/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql-component-example.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kodtodya/practice/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kodtodya/practice/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kodtodya/practice/processor/SQLProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kodtodya/practice/processor/SQLProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kodtodya/practice/routes/TimerToJdbcRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kodtodya/practice/routes/TimerToJdbcRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/kodtodya/practice/routes/TimerToSqlRoute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kodtodya/practice/routes/TimerToSqlRoute.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15">
-              <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kodtodya/practice/routes/TimerToSqlRoute.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kodtodya/practice/processor/SQLProcessor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-30">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/kodtodya/practice/routes/TimerToJdbcRoute.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="17" column="36" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -69,18 +87,13 @@
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1" />
     <option name="width" value="1922" />
     <option name="height" value="1048" />
   </component>
+  <component name="ProjectId" id="1sIhsF5Z6AKephl2J7Ov3gfrLgr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -152,21 +165,37 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="RunManager">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.kodtodya.practice.Application" />
+      <module name="sql-component-example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.kodtodya.practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <item itemvalue="Application.Application" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3743e308-3545-4d35-b648-e21decf09068" name="Default Changelist" comment="" />
@@ -202,6 +231,17 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/resources/schema.sql">
