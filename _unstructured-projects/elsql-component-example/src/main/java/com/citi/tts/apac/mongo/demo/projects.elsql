@@ -1,4 +1,0 @@
-@NAME(projects)
- SELECT * 
- FROM iot_transaction 
- WHERE EVENT_ID = :${header.eventId}
