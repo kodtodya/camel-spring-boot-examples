@@ -33,6 +33,7 @@ This folder contains all the examples(Standalone Spring Boot) which can be start
 21. sql-component-example (timer, sql, file & jdbc component and processor & embedded database)
 22. camel-boot-rest-sql-narayana-example (direct, rest & sql component and processor & embedded database)
 23. kafka-component-example (netty-http, rest, kafka, file producer, throttler, exception handling, concurrentConsumers and toD)
+24. encryption-decryption-example (pgp keys, marshalling-unmarshalling, file producer-consumer, encryption, decryption, exception handling, recipientList, Parallel processing)
 
 Not covered here:
 
