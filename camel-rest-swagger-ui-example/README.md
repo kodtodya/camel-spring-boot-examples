@@ -11,5 +11,9 @@ The example can be built with
 ### Check Swagger API
 
 
-    http://localhost:8080/swagger
+    http://localhost:8888/api-docs/rest-camel-example/swagger.yaml
+
+    http://localhost:8888/api-docs/rest-camel-example/
+
+    http://localhost:8888/api-docs/rest-camel-example/swagger-ui
 

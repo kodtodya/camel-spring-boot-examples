@@ -36,8 +36,8 @@ This folder contains all the examples(Standalone Spring Boot) which can be start
 24. sql-component-postgres-example (timer & jdbc component and processor, postgres database)
 25. kafka-component-example (netty-http, rest, kafka, file producer, throttler, exception handling, concurrentConsumers and toD)
 26. encryption-decryption-example (pgp keys, marshalling-unmarshalling, file producer-consumer, encryption, decryption, exception handling, recipientList, Parallel processing)
-27. camel-rest-swagger-ui-example (rest, swagger-ui) ** - Not working yet
-28. cxf-component-example
+27. camel-rest-swagger-ui-example (rest, swagger-ui)
+28. camel-cxf-wsdl-first-spring-boot (SOAP, processor, cxf, server-client)
 
 Not covered here:
 
