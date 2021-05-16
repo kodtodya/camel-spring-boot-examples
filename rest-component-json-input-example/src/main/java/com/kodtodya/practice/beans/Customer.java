@@ -1,22 +1,14 @@
 package com.kodtodya.practice.beans;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.annotation.JsonRootName;
-
-//@JsonRootName(value = "customer")
 public class Customer {
 
-    //@JsonProperty("id")
-    private String id;
+    String id;
 
-    //@JsonProperty("name")
-    private String name;
+    String name;
 
-    //@JsonProperty("address")
-    private String address;
+    String address;
 
-    //@JsonProperty("paymentMethod")
-    private String paymentMethod;
+    String paymentMethod;
 
     public String getId() {
         return id;
@@ -48,5 +40,15 @@ public class Customer {
 
     public void setPaymentMethod(String paymentMethod) {
         this.paymentMethod = paymentMethod;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer : {" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", paymentMethod='" + paymentMethod + '\'' +
+                '}';
     }
 }

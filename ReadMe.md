@@ -17,7 +17,7 @@ This folder contains all the examples(Standalone Spring Boot) which can be start
 5. http-component-example (http & log components)
 6. rest-component-example (rest/servlet & direct components)
 7. rest-jetty-component-example (rest/jetty & direct components)
-8. rest-component-json-input-example (rest/servlet, file & direct components with json input) ** not working at this moment
+8. rest-component-json-input-example (rest/servlet, file & direct components with json input)
 9. splitter-example (file & log components and splitter EIP )
 10. splitter-aggregator-example (timer & direct component and processor & splitter-aggregator EIP)
 11. splitter-aggregator-file-example (file & direct component and splitter-aggregator EIP)

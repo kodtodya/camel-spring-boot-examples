@@ -1,8 +1,6 @@
 # Spring-Boot Camel QuickStart
 
-This example demonstrates how you can use Apache Camel, Spring Boot along with embedded H2 database.
-
-The quickstart uses Spring Boot to configure a little application that includes a Camel route that triggers a message every second 25 times, and routes the message to a H2 database.
+This example demonstrates how you can use Apache Camel, Spring Boot along with rest post service with json input.
 
 ### Building
 
@@ -10,15 +8,10 @@ The example can be built with
 
     mvn clean install
 
-###Check Hawtio
-
-All the resource utilization can be monitored using Hawtio
-
-    http://localhost:8081/hawtio
-
-
 ### Test rest service
 
 Invoke rest service using below URL. Feel free to update the input number.
 
-    http://localhost:8080/checkprime/11
+    POST URL: localhost:8080/customer
+    RAW Body with JSON(application/json) type: {"id":"1","name":"general electric","address":"united states","paymentMethod":"cheque"}
+

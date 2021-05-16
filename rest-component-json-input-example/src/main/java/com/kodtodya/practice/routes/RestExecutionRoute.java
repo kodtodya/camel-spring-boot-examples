@@ -1,14 +1,8 @@
 package com.kodtodya.practice.routes;
 import com.kodtodya.practice.beans.Customer;
-import com.kodtodya.practice.services.PrimeNumberService;
+import com.kodtodya.practice.services.TransformationService;
 import org.apache.camel.CamelExecutionException;
-import org.apache.camel.Exchange;
-import org.apache.camel.Message;
 import org.apache.camel.builder.RouteBuilder;
-import org.apache.camel.component.jackson.JacksonDataFormat;
-import org.apache.camel.model.dataformat.JacksonXMLDataFormat;
-import org.apache.camel.model.dataformat.JsonDataFormat;
-import org.apache.camel.model.dataformat.JsonLibrary;
 import org.apache.camel.model.rest.RestBindingMode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -17,7 +11,7 @@ import org.springframework.stereotype.Component;
 public class RestExecutionRoute extends RouteBuilder {
 
 	@Autowired
-	private PrimeNumberService service;
+	private TransformationService service;
 
 	@Override
 	public void configure() throws Exception {
@@ -28,47 +22,30 @@ public class RestExecutionRoute extends RouteBuilder {
 				.maximumRedeliveries(5)
 				// asynchronous redelivery
 				.asyncDelayedRedelivery()
-				// log the exeption details
+				// log the exception details
 				.to("log:exceptionLogger");
 
 		// call the embedded rest service from the RestController
 		restConfiguration()
 				.component("servlet")
-				.port(8080)
-				.bindingMode(RestBindingMode.auto);
+				//.port(8080)
+				.bindingMode(RestBindingMode.auto)
+		;
 
-		JacksonDataFormat format = new JacksonDataFormat(Customer.class);
-		format.setPrettyPrint(true);
-
-		// actual rest service implementation
+		// rest-post service implementation accepting the json
 		rest()
+				.consumes("application/json")
+				//.produces("application/json")
 				.post("/customer")
 				.type(Customer.class)
-				.consumes("application/json")
 				.route()
-				.to("direct:customer")
-				.end();
-
-		from("direct:customer")
-				.inOnly()
 				.log("Incoming Body is ${body}")
-				.unmarshal(format)
-				.log("Incoming Body after unmarshal is ${body}")
-				.bean(this,"transformMessage")
+				.setProperty("out-file-name", simple("${body.getName}"))
+				.bean(service,"transformMessage")
 				.log("Outgoing pojo Body is ${body}")
-				.to("file:{{output.location}}");
+				.to("file:{{output.location}}?fileName=${exchangeProperty.out-file-name}")
+				.end();
 	}
 
-	public void transformMessage(Exchange exchange){
-		Message in = exchange.getIn();
-		Customer customer = in.getBody(Customer.class);
 
-		StringBuilder response = new StringBuilder();
-		response.append("id=" + customer.getId())
-				.append("|name=" + customer.getName())
-				.append("|address=" + customer.getAddress())
-				.append("|payment-method=" + customer.getPaymentMethod());
-
-		in.setBody(response);
-	}
 }
