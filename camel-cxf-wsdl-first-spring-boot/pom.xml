@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.kodtodya.practice</groupId>
+  <artifactId>camel-cxf-wsdl-first-spring-boot</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <name>camel-cxf-wsdl-first-spring-boot</name>
+  <packaging>pom</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<fuse.version>7.8.0.fuse-sb2-780038-redhat-00001</fuse.version>
+		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<cxf.xjc.version>3.0.5</cxf.xjc.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.jboss.redhat-fuse</groupId>
+				<artifactId>fuse-springboot-bom</artifactId>
+				<version>${fuse.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+  <modules>
+     <module>camel-cxf-wsdl-first-spring-boot-server</module>
+     <module>camel-cxf-wsdl-first-spring-boot-client</module>
+  </modules>
+</project>
