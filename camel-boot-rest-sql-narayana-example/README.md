@@ -34,5 +34,15 @@ After opening it in browser, use below params:
     User Name: sa
     Password:     
 ```
-Click on connect and open `ORGANISATIONS` table or run `SELECT * FROM ORGANIZATIONS` query.
+Click on connect and open `COURSES` table or run `SELECT * FROM COURSES` query.
 
+## trigger rest service to add courses
+
+    http://localhost:8080/sessions/spring-boot
+    http://localhost:8080/sessions/spring
+    http://localhost:8080/sessions/java
+    http://localhost:8080/sessions/maven
+
+## Try to fetch the inserted data
+
+    http://localhost:8080/getsessions
