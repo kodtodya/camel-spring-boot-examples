@@ -1,8 +1,6 @@
 # Spring-Boot Camel QuickStart
 
-This example demonstrates how you can use Apache Camel, Spring Boot along with embedded H2 database.
-
-The quickstart uses Spring Boot to configure a little application that includes a Camel route that triggers a message every second 25 times, and routes the message to a H2 database.
+This example demonstrates how you can use Apache Camel, Spring Boot along with cxf-rs.
 
 ### Building
 
@@ -21,4 +19,4 @@ All the resource utilization can be monitored using Hawtio
 
 Invoke rest service using below URL. Feel free to update the input number.
 
-    http://localhost:8080/checkprime/11
+    http://localhost:8888/check-prime/29
