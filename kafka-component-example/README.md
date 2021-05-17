@@ -74,6 +74,11 @@ $ ./kafka-topics.sh --list --bootstrap-server localhost:9092
 $ ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic fuse-demo --from-beginning
 ```
 
+** after starting consumer on topic, start console producer to send messages on kafka topic using below command
+```
+./kafka-console-producer.sh --bootstrap-server localhost:9092 --topic fuse-demo
+```
+
 ## Now, it's time to test our app
 ```
  After running the example, check your console consumer; it should print the messages
