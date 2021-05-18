@@ -1,9 +1,9 @@
 # kafka-camel-example
-## camel-blueprint-example
+## kafka-component-example
 ### We are covering below topics in this example:
 - netty-http
 - rest
-- blueprint
+- java dsl
 - kafka producer
 - kafka consumer
 - file producer
