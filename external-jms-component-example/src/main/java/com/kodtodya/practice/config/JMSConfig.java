@@ -13,9 +13,6 @@ import javax.jms.ConnectionFactory;
 @Configuration
 public class JMSConfig {
 
-    @Value("${spring.jms.queue}")
-	public String DEFAULT_QUEUE;
-    
     @Value("${spring.jms.broker-url}")
     private String BROKER_URL;
     
