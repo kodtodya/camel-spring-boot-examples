@@ -4,10 +4,15 @@ import org.apache.camel.CamelExecutionException;
 import org.apache.camel.Exchange;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.model.rest.RestBindingMode;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class RestToActiveMQRoute extends RouteBuilder {
+
+	@Value("${spring.activemq.queue}")
+	//@PropertyInject("{{spring.activemq.queue}}")
+	private String queueName;
 
 	@Override
 	public void configure() throws Exception {
@@ -37,7 +42,7 @@ public class RestToActiveMQRoute extends RouteBuilder {
 				// logging step
 				.log("Message received and will be sent to Activemq: ${body}").id("activemq-producer-log")
 				// send to activemq over myQ queue
-				.to("activemq:queue:myQ").id("amq-producer")
+				.to("activemq:queue:" + queueName).id("amq-producer")
 
 				// set header for rest service response
 				.setHeader(Exchange.HTTP_RESPONSE_CODE, constant(200))
