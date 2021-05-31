@@ -38,6 +38,8 @@ This folder contains all the examples(Standalone Spring Boot) which can be start
 26. encryption-decryption-example (pgp keys, marshalling-unmarshalling, file producer-consumer, encryption, decryption, exception handling, recipientList, Parallel processing)
 27. camel-rest-swagger-ui-example (rest, swagger-ui)
 28. camel-cxf-wsdl-first-spring-boot (SOAP, processor, cxf, server-client)
+29. file-junit-example (file component and unit testing)
+30. rest-junit-example (rest component and unit testing)
 
 Not covered here:
 
