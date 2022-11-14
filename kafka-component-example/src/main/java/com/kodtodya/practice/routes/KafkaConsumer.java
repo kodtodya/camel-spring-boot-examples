@@ -7,7 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class KafkaToFileRoute extends RouteBuilder {
+public class KafkaConsumer extends RouteBuilder {
 
     @Autowired
     private KafkaMsgProcessor printEvents;
@@ -16,17 +16,18 @@ public class KafkaToFileRoute extends RouteBuilder {
     public void configure() throws Exception {
 
         onException(CamelExecutionException.class)
-                .to("log:exceptionLogger");
+                .to("log:exception-logger");
 
         // read messages from kafka with 25 concurrent consumers & send to file
-        from("{{kafka.component.uri}}&consumerStreams=25")
+        from("kafka:{{kafka.component.uri}}&consumersCount=1")
                 // newly appended data should get appended to new line
                 .transform(body().append("\n"))
+                .log("---------------- Kafka Consumer - Message received - logging starts ----------------")
+                .log("Kafka Consumer body received: ${body}")
                 .log("Kafka Consumer Topic Name: ${headers[kafka.TOPIC]}")
                 .log("Kafka Consumer Partition: ${headers[kafka.PARTITION]}")
                 .log("Kafka Consumer Offset: ${headers[kafka.OFFSET]}")
                 .log("Kafka Consumer Key: ${headers[kafka.KEY]}")
-                // in case of fileExist=Append, pls refer to bug: https://issues.apache.org/jira/browse/CAMEL-14127
-                .to("file:{{file.output.location}}?fileName={{output.file-name}}&fileExist=Append&charset=utf-8");
+                .log("---------------- Kafka Consumer - Message received - logging ends ----------------");
     }
 }
