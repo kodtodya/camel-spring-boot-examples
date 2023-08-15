@@ -1,0 +1,19 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1466505664475
+Build-Jdk: 1.8.0_92
+Built-By: alele
+Bundle-ManifestVersion: 2
+Bundle-Name: Camel-OSGI-Service-Import
+Bundle-SymbolicName: camel-blueprint-osgi-serviceimport-bundle
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.redhat.camel.blueprint.osgi.serviceimport.bundle;use
+ s:="com.redhat.camel.blueprint.osgi.interfaces";version="1.0.0.SNAPSHOT
+ "
+Import-Package: com.redhat.camel.blueprint.osgi.interfaces;version="[1.0
+ ,2)",org.apache.activemq.jndi;version="5.11.0.redhat-621084",org.osgi.s
+ ervice.blueprint;version="[1.0.0,2.0.0)"
+Import-Service: com.redhat.camel.blueprint.osgi.interfaces.AMQMessageCon
+ sumer;multiple:=false,com.redhat.camel.blueprint.osgi.interfaces.AMQMes
+ sageProducer;multiple:=false
+Tool: Bnd-1.50.0

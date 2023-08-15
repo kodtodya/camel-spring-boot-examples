@@ -1,7 +1,0 @@
-policyID,statecode,county,eq_site_limit,hu_site_limit,fl_site_limit,fr_site_limit,tiv_2011,tiv_2012,eq_site_deductible,hu_site_deductible,fl_site_deductible,fr_site_deductible,point_latitude,point_longitude,line,construction,point_granularity
-119736,FL,CLAY COUNTY,498960,498960,498960,498960,498960,792148.9,0,9979.2,0,0,30.102261,-81.711777,Residential,Masonry,1
-448094,FL,CLAY COUNTY,1322376.3,1322376.3,1322376.3,1322376.3,1322376.3,1438163.57,0,0,0,0,30.063936,-81.707664,Residential,Masonry,3
-995932,FL,CLAY COUNTY,0,19260000,0,0,19260000,20610000,0,0,0,0,30.102226,-81.713882,Commercial,Reinforced Concrete,1
-671392,FL,CLAY COUNTY,0,13410000,0,0,13410000,11700000,0,0,0,0,30.091921,-81.711929,Commercial,Reinforced Concrete,3
-575194,FL,PINELLAS COUNTY,0,3759303.6,0,3759303.6,3759303.6,4209183.22,0,0,0,0,28.122885,-82.770218,Commercial,Reinforced Masonry,3
-175829,FL,PINELLAS COUNTY,0,24210000,0,24210000,24210000,27000000,0,0,0,0,28.122885,-82.770218,Commercial,Reinforced Concrete,3

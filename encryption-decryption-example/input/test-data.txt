@@ -1,3 +1,0 @@
-hi,
-
-this is sample data to test the encryption and decryption in your camel route.

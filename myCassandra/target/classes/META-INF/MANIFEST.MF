@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1492178420680
+Build-Jdk: 1.8.0_92
+Built-By: alele
+Bundle-Blueprint: OSGI-INF/blueprint/blueprint.xml
+Bundle-Description: Camel Content-Based Router Example
+Bundle-License: http://www.apache.org/licenses/LICENSE-2.0.html
+Bundle-ManifestVersion: 2
+Bundle-Name: Camel Content-Based Router Example [myCassandra]
+Bundle-SymbolicName: myCassandra
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.redhat.camel.cassandra;uses:="org.apache.camel";vers
+ ion="1.0.0"
+Import-Package: org.apache.camel;version="[2.17,3)",org.apache.log4j;ver
+ sion="[1.2,2)",org.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.2.0.201605172007

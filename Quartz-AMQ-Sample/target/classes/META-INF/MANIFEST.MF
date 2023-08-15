@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1494245862919
+Build-Jdk: 1.8.0_92
+Built-By: alele
+Bundle-ManifestVersion: 2
+Bundle-Name: Camel Blueprint Route
+Bundle-SymbolicName: quartz-amq-sample
+Bundle-Version: 1.0.0
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.mycompany.quartz.amq.sample;version="1.0.0"
+Import-Package: org.apache.activemq.camel.component;version="[5.11,6)",o
+ rg.osgi.service.blueprint;version="[1.0.0,2.0.0)"
+Originally-Created-By: Apache Maven Bundle Plugin
+Tool: Bnd-1.50.0

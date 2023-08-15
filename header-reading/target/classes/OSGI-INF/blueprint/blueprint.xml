@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blueprint xmlns="http://www.osgi.org/xmlns/blueprint/v1.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+       http://www.osgi.org/xmlns/blueprint/v1.0.0 http://www.osgi.org/xmlns/blueprint/v1.0.0/blueprint.xsd
+       http://camel.apache.org/schema/blueprint http://camel.apache.org/schema/blueprint/camel-blueprint.xsd">
+
+	<bean id="helloBean" class="com.redhat.camel.blueprint.header.reading.HelloBean">
+		<property name="say" value="Hi from Camel" />
+	</bean>
+
+<!-- 	<camelContext xmlns="http://camel.apache.org/schema/blueprint">
+		<route id="headerReader">
+			<from uri="timer:foo?period=5000&amp;repeatCount=1" />
+			
+			<setHeader headerName="myTestHeader">
+				<constant>hello bean header</constant>
+			</setHeader>
+		
+			<log message="The in header contains ${headers.myTestHeader}" />
+			<setBody>
+				<method ref="helloBean" method="hello" />
+			</setBody>
+			<log message="The message contains ${body}" />
+
+			<to uri="mock:result" />
+			<log message="The out header contains ${headers.myTestHeader}" />
+			
+		</route>
+	</camelContext> -->
+
+
+	<camelContext trace="true"
+		xmlns="http://camel.apache.org/schema/blueprint" >
+
+		<route id="header_reading_sample" startupOrder="1">
+			<from uri="jetty:http://localhost:8888/helloService" />
+			<log logName="HTTP LOG" loggingLevel="INFO"
+				message="HTTP HEADER KEY: ${headers.headerKey}" />
+			<bean ref="helloBean" method="hello" />
+		</route>
+
+		<route id="header_reading_sample2" startupOrder="0">
+	<!-- <log message="header_reading_sample2 started"/> -->
+	<from uri="jetty:http://localhost:8888/helloService123" />
+	<filter>
+		<simple>${in.header.type} == 'test'</simple>
+		<to uri="bean:helloBean?method=hello" />
+		<transform>
+  <simple>The gold value is ${header.headerKey}</simple>
+</transform>
+	</filter>
+	<log logName="HTTP LOG" loggingLevel="INFO"
+		message="HTTP HEADER KEY: ${headers.headerKey}" />
+	<!-- <bean ref="helloBean" method="hello" /> -->
+</route>
+
+	</camelContext>
+
+</blueprint>

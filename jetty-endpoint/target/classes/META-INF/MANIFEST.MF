@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1467008448860
+Build-Jdk: 1.8.0_92
+Built-By: alele
+Bundle-ManifestVersion: 2
+Bundle-Name: Camel Blueprint Route
+Bundle-SymbolicName: camel-blueprint-jetty
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.redhat.camel.blueprint.jetty;uses:="org.apache.camel
+ .builder,org.apache.camel.main,org.apache.camel,org.apache.camel.model"
+ ;version="1.0.0.SNAPSHOT",com.redhat.camel.blueprint.jetty.blueprintRef
+ s;uses:="org.apache.camel";version="1.0.0.SNAPSHOT"
+Import-Package: org.apache.camel;version="[2.15,3)",org.apache.camel.bui
+ lder;version="[2.15,3)",org.apache.camel.main;version="[2.15,3)",org.ap
+ ache.camel.model;version="[2.15,3)",org.osgi.service.blueprint;version=
+ "[1.0.0,2.0.0)"
+Tool: Bnd-1.50.0
